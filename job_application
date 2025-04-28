@@ -1,0 +1,55 @@
+Root of the Project
+├── 📁 backend/                              # Flask or FastAPI Backend
+│   ├── 📁 app/
+│   │   ├── 📁 __init__.py
+│   │   ├── 📁 config/                        # Environment configs
+│   │   │   ├── development.py
+│   │   │   ├── production.py
+│   │   │   └── testing.py
+│   │   ├── 📁 api/                           # API Versioning
+│   │   │   ├── v1/
+│   │   │   │   ├── __init__.py
+│   │   │   │   ├── auth.py                   # Authentication APIs
+│   │   │   │   ├── users.py                  # User Profile APIs
+│   │   │   │   ├── university_applications.py  # University Application APIs (New)
+│   │   │   │   ├── job_applications.py        # Job Application APIs (New)
+│   │   │   │   ├── recommendations.py         # Recommendations Submission APIs (New)
+│   │   │   │   ├── jobs.py                    # Job Postings APIs (New)
+│   │   │   │   ├── submissions.py             # Document submission APIs (New)
+│   │   │   │   └── notifications.py           # Notifications APIs
+│   │   ├── 📁 models/                         # Backend Models
+│   │   │   ├── university_application.py       # University Application Model (New)
+│   │   │   ├── job_application.py             # Job Application Model (New)
+│   │   │   ├── recommendation.py              # Recommendation Model (New)
+│   │   │   └── job_posting.py                 # Job Posting Model (New)
+│   │   ├── 📁 services/                       # Services Layer for Business Logic
+│   │   │   ├── university_application_service.py # Service for University Applications (New)
+│   │   │   ├── job_application_service.py       # Service for Job Applications (New)
+│   │   │   ├── recommendation_service.py        # Service for Recommendations (New)
+│   │   │   └── job_posting_service.py          # Service for Job Postings (New)
+│   │   ├── 📁 utils/                          # Utility Functions
+│   │   │   └── file_upload.py                  # File upload utility (for document submission)
+│   ├── 📁 frontend/                          # React Frontend
+│   │   ├── 📁 components/                     # Frontend components
+│   │   │   ├── UniversityApplicationForm.jsx   # Form for University Application (New)
+│   │   │   ├── JobApplicationForm.jsx         # Form for Job Application (New)
+│   │   │   ├── RecommendationForm.jsx         # Form for submitting Recommendations (New)
+│   │   │   ├── JobListings.jsx                # Job Listings page (New)
+│   │   │   ├── UniversityListing.jsx          # University Listings page (New)
+│   │   │   └── ApplicationStatus.jsx          # Page for application status tracking (New)
+│   │   ├── 📁 redux/                          # Redux state management
+│   │   │   ├── jobApplicationSlice.js         # Redux slice for job applications (New)
+│   │   │   ├── universityApplicationSlice.js  # Redux slice for university applications (New)
+│   │   │   ├── recommendationSlice.js         # Redux slice for recommendations (New)
+│   │   │   ├── notificationsSlice.js          # Redux slice for notifications
+│   │   │   └── authSlice.js                   # Redux slice for user authentication
+│   │   ├── 📁 services/                       # Frontend Services for API Calls
+│   │   │   ├── jobApplicationService.js       # Service for submitting job applications (New)
+│   │   │   ├── universityApplicationService.js # Service for submitting university applications (New)
+│   │   │   ├── recommendationService.js       # Service for handling recommendations (New)
+│   │   │   └── jobPostingService.js           # Service for fetching job postings (New)
+│   ├── 📁 tests/                             # Unit and Integration Tests
+│   │   ├── test_university_application.py     # Test for University Application APIs (New)
+│   │   ├── test_job_application.py           # Test for Job Application APIs (New)
+│   │   ├── test_recommendation.py            # Test for Recommendations (New)
+│   │   └── test_job_posting.py               # Test for Job Postings (New)
