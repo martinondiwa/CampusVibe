@@ -1,4 +1,4 @@
-# CampusVibe
+# CampusVibe.
 Social Media Site.
 Root of the Project
 │
